@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'articles.apps.ArticlesConfig',
     'calendar_entries.apps.CalendarEntriesConfig',
+    'category.apps.CategoryConfig',
     'pages.apps.PagesConfig',
     'patients.apps.PatientsConfig',
     'patients_maps.apps.PatientsMapsConfig',

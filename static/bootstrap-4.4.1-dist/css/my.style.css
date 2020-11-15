@@ -37,6 +37,7 @@ li a:hover {
 img {
     border: 3px solid white;
     box-shadow: 1px 1px 10px gray;
+    text-align: center;
 }
 .person_image img {
     max-width: 100%

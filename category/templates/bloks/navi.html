@@ -1,0 +1,13 @@
+<nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+     <ul class="top-meny">
+        <li><a href="{% url 'index' %}">Главная</a></li>
+        <li><a href="{% url 'pages' 'about' %}">Обо мне</a></li>
+        <li><a href="{% url 'pages' 'articles' %}">Статьи</a></li>
+        <li><a href="{% url 'pages' 'service' %}">Услуги</a></li>
+    </ul>
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-color my-2 my-sm-0" type="submit">Search</button>
+    </form>
+</nav>

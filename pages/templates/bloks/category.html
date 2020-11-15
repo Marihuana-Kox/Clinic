@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Наши предложения</h3>
+        </div>
+        {% for cat in category %}
+        <div class="col-4 person_image">
+            <p><picture>
+                  <source srcset="{{ cat.image.url }}" type="image/svg+xml">
+                  <img src="{{ cat.image.url }}" class="img-fluid img-thumbnail" alt="...">
+                </picture>
+<!--                <img src="{{ servic.image.url }}" alt="{{ servic.title }}">-->
+            </p>
+            <h3>{{ cat.title }}</h3>
+            <p>{{ cat.description|truncatewords:20 }}<a href="{% url 'category' cat.slug %}">Подробнее</a></p>
+            <p></p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
