@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Наши предложения</h3>
+        </div>
+        {% for servic in service %}
+        <div class="col-4 person_image">
+            <p><picture>
+                  <source srcset="{{ servic.image.url }}" type="image/svg+xml">
+                  <img src="{{ servic.image.url }}" class="img-fluid img-thumbnail" alt="...">
+                </picture>
+<!--                <img src="{{ servic.image.url }}" alt="{{ servic.title }}">-->
+            </p>
+            <h3>{{ servic.title }}</h3>
+            <p>{{ servic.description|truncatewords:20 }}<a href="">Подробнее</a></p>
+            <p></p>
+            <div class="block_price">
+                <strong>{{ servic.price }} руб</strong>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

@@ -1,0 +1,49 @@
+body {
+    background: rgba(253, 140, 0, .45);
+}
+H1,H3{
+    margin: 50px 0;
+    color: rgba(253, 140, 0, .45);
+    text-shadow: 1px 1px 1px gray;
+    font-weight: 800;
+}
+h3 {
+    text-align: center;
+}
+.top-meny {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.top-meny li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 30px;
+}
+li a {
+    color: rgba(255, 255, 255, .65);
+}
+li a:hover {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+}
+.btn-color {
+    color: #fecb8c;
+    border-color: #fecb8c;
+}
+.btn-color:hover {
+    background: #fecb8c;
+}
+img {
+    border: 3px solid white;
+    box-shadow: 1px 1px 10px gray;
+}
+.person_image img {
+    max-width: 100%
+}
+.block_price {
+    width: 100%;
+    font-size: 3em;
+    color: #8500FE;
+    text-align: center;
+}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+<!--{% load static %}-->
+{% block title %}Первая страница{% endblock title %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            {% include 'bloks/navi.html' %}
+        </div>
+        <div class="col-12">
+            <h1>{{ page.title }}</h1>
+        </div>
+        <div class="col-12 image-style">
+            <p>
+                <img src="{{ page.image.url }}" class="rounded mx-auto d-block" alt="{{ page.title }}">
+            </p>
+            <p>
+                {{ page.body }}
+            </p>
+        </div>
+    </div>
+</div>
+{% if request.path == '/' %}
+{% include 'bloks/sertvic.html' %}
+{% include 'bloks/person.html' %}
+{% endif %}
+{% endblock content %}

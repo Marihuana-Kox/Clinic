@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h3>Наши специалисты</h3>
+        </div>
+        {% for person in persons %}
+        <div class="col-4 person_image">
+            <p>
+                <img src="{{ person.image.url }}" alt="{{ person.name }}">
+            </p>
+            <h3>{{ person.name }}</h3>
+            <p>{{ person.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
